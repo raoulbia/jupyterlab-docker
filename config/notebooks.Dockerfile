@@ -6,6 +6,9 @@ RUN apt-get update && \
 
 RUN pip install numpy
 RUN pip install scipy
+RUN pip install sklearn
+RUN pip install matplotlib
+RUN pip install seaborn
 RUN pip install pandas
 RUN pip install pivottablejs
 
