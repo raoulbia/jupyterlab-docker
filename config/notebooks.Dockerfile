@@ -11,12 +11,19 @@ RUN pip install matplotlib
 RUN pip install seaborn
 RUN pip install pandas
 RUN pip install pivottablejs
+RUN pip install nltk
+RUN pip install pycorenlp
+#RUN pip install stanza
+#RUN pip install google
+#RUN pip install protobuf
+#RUN pip install stanfordcorenlp
+#RUN pip install PyStanfordDependencies
 
 RUN pip install plotly==3.4.0
 RUN pip install "notebook>=5.3" "ipywidgets>=7.2"
 RUN pip install jupyterlab==0.35
 
-RUN export NODE_OPTIONS=--max-old-space-size=4096
+RUN export NODE_OPTIONS=--max-old-space-size=4096 # this takes a long time, installs yarn, webpack etc ...
 #RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38
 RUN jupyter labextension install plotlywidget@0.5.0
 RUN jupyter labextension install @jupyterlab/plotly-extension@0.18
