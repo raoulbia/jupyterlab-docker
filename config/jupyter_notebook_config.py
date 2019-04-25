@@ -187,7 +187,7 @@ c.NotebookApp.allow_remote_access = True
 
 ## (bytes/sec) Maximum rate at which stream output can be sent on iopub before
 #  they are limited.
-#c.NotebookApp.iopub_data_rate_limit = 1000000
+c.NotebookApp.iopub_data_rate_limit = 1.0e10
 
 ## (msgs/sec) Maximum rate at which messages can be sent on iopub before they are
 #  limited.
