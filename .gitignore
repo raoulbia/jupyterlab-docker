@@ -2,7 +2,6 @@ data/
 .vagrant
 .ipynb_checkpoints/
 notebooks/airbnb/.ipynb_checkpoints
-libs/
 *txt
 *csv
 *zip
