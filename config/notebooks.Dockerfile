@@ -22,6 +22,7 @@ RUN pip install pycorenlp
 RUN pip install plotly==3.4.0
 RUN pip install "notebook>=5.3" "ipywidgets>=7.2"
 RUN pip install jupyterlab==0.35
+RUN pip install ipympl
 
 RUN export NODE_OPTIONS=--max-old-space-size=4096 # this takes a long time, installs yarn, webpack etc ...
 #RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38
